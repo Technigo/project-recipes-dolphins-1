@@ -1,10 +1,10 @@
 const main = document.getElementById('main');
 
-const applicationID = "7bfe09bb";
+const applicationID = "4fcdd240";
 // const applicationKey1= "b85adca58547211f75cf9c3a47cc424d";
 
 
-const applicationKey= "6c641ba9d7108ec30c554da9cc973757";
+const applicationKey= "86fbda45bf039fe0a2dd29fdedc2f8d8";
 // const applicationKey= "a82c3e69b3ddce206012513a57e2f8d9";
 
 
@@ -31,6 +31,7 @@ fetch(queryString)
       main.innerHTML += `
       <h1>${hits.recipe.label}</h1><br>
       <img src=${hits.recipe.image}>
+      <p>${hits.recipe.totalTime}</p>
       `
 
         main.innerHTML += `<h3>Health Labels:</h3>`;
@@ -46,14 +47,6 @@ fetch(queryString)
           <p>${ingridientsLine}</p>
         `
       })
-
-      main.innerHTML += `<h3>Cooking time</h3>`;
-      json.hits.forEach((cookingTime) => {
-      main.innerHTML += `
-      <p>${cookingTime.recipe.totalTime}</p>
-      `
-      })
-
 
     })
 
