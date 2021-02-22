@@ -42,9 +42,9 @@ fetch(queryString)
         `
       })
       main.innerHTML += `<h3>Ingredients lines:</h3>`;
-      hits.recipe.ingredientLines.forEach((ingridientsLine) => {
+      hits.recipe.ingredientLines.forEach((ingredientLines) => {
         main.innerHTML += `
-          <p>${ingridientsLine}</p>
+          <p>${ingredientLine}</p>
         `
       })
 
