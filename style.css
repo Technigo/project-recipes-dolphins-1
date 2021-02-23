@@ -51,6 +51,16 @@ body {
   border-radius: 5px;
 }
 
+.text-box {
+  width: 150px;
+}
+
+.search-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .css-card-grid {
   display: flex;
   flex-direction: column;
