@@ -58,7 +58,6 @@ fetch(queryString)
 
 
       cssCardGrid.innerHTML += `
-
       <div id="cssCard" class="css-card">
       <div id="cssCardImg" class="css-card-image">
       <img src=${image}>
