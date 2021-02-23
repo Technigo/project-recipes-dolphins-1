@@ -63,7 +63,9 @@ searchButton.addEventListener('click', () => {
   console.log(queryText);
   console.log(excludeText);
   queryString = `${applicationUrl}?app_id=${applicationID}&app_key=${applicationKey}&q=${queryText}&excluded=${excludeText}&from=0&to=${numberOfRecepies}`;
-  cssCardGrid.innerHTML = ""
+  cssCardGrid.innerHTML = "";
+  searchField.value = "";
+  excludeField.value = "";
   fetchRecipe(queryString);
 })
 fetchRecipe(queryString);
