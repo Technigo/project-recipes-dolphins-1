@@ -132,6 +132,10 @@ body {
   text-align: center;
 }
 
+.css-card-content a {
+  color: black;
+}
+
 
 
 /* Tablet */
