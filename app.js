@@ -52,20 +52,6 @@ fetch(queryString)
       <p>Ingredients: ${ingredients}</p>
       `
 
-        main.innerHTML += `<h3>Health Labels:</h3>`;
-      hits.recipe.healthLabels.forEach((healthLabel) => {
-        main.innerHTML += `
-          <p>${healthLabel}</p>
-
-        `
-      })
-      main.innerHTML += `<h3>Ingredients lines:</h3>`;
-      hits.recipe.ingredientLines.forEach((ingredientLines) => {
-        main.innerHTML += `
-          <p>${ingredientLine}</p>
-        `
-      })
-
     })
 
 })
