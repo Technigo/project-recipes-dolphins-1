@@ -10,8 +10,6 @@ const applicationID = "7bfe09bb";
 // const applicationID = "1b5c3465";
 
 
-// const applicationKey= "a82c3e69b3ddce206012513a57e2f8d9";
-
 // Skapa en funktion likt generateBoard() från Guess Who som syns från början.
 // När man sedan söker/filtrerar så genereras en annan innerHTML med sökresultatet
 const applicationUrl = "https://api.edamam.com/search";
@@ -64,7 +62,7 @@ fetch(queryString)
       </div>
       <div id="cssCardContent" class="css-card-content">
         <div id="cssCardContentTitle" class="css-card-content-title">
-        <h2>${label}</h2><br>
+        <h2>${label}</h2>
         <p>Cooking time: ${fixedCookingTime(cookingTime)}</p>
         </div>
         <div id="cssCardContentType" class="css-card-content-type">
