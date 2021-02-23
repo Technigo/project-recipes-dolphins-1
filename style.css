@@ -55,19 +55,45 @@ body {
   border-radius: 5px;
 }
 
+.css-card-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .css-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 25px;
+}
+
+.css-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.css-card-content h2 {
+  text-align: center;
+}
+
+.css-card-content p {
+  text-align: center;
 }
 
 /* Tablet  */
-@media (min-width: 667px) {
-  .css-card {
+@media (min-width: 1023px) {
+  .css-card-grid {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .css-card {
     width: 50%;
   }
 
@@ -115,4 +141,13 @@ body {
 }
 
 /* Desktop */
-@media (min-width: 1024px) {}
+@media (min-width: 1439px) {
+  .css-card-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .css-card {
+    width: 33%;
+  }
+}
