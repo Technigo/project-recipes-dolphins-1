@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+<<<<<<< HEAD
 
+=======
+>>>>>>> 722561e3afd4c4d96eb5fb9fbf6193bd2606207f
 * {
   margin: 0;
   padding: 0;
@@ -29,10 +32,22 @@ body {
   width: auto;
 }
 
+.logo-container img {
+  padding-right: 5px;
+}
+
 .logo {
   color: #BF0000;
   font-weight: 700;
-  margin-left: 5px;
+}
+
+.logo-container img {
+  padding-right: 5px;
+}
+
+.logo {
+  color: #BF0000;
+  font-weight: 700;
 }
 
 .hamburger {
@@ -46,7 +61,11 @@ body {
 
 .hamburger div {
   width: 30px;
-  height: 5px;
+<<<<<<< HEAD
+
+=======
+
+>>>>>>> 722561e3afd4c4d96eb5fb9fbf6193bd2606207f  height: 5px;
   background-color: #000;
   border-radius: 5px;
 }
@@ -59,9 +78,13 @@ body {
   width: 100%;
 }
 
-/* Tablet  */
-@media (min-width: 667px) {
-  .css-card {
+/* Tablet  *
+<<<<<<< HEAD/
+@media (min-
+
+
+width: 667px) {
+ =======      </diV>>>>>>> 722561e3afd4c4d96eb5fb9fbf6193bd2606207f .css-card {
     flex-direction: row;
     flex-wrap: wrap;
     width: 50%;

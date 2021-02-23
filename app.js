@@ -1,27 +1,19 @@
+// DOM
 const main = document.getElementById('main');
 const searchButton = document.getElementById('searchButton')
-const cssCardGrid = document.getElementById("cssCardGrid");
+const searchField = document.getElementById('search')
+const excludeField = document.getElementById('exclude')
+const cssCardGrid = document.getElementById("cssCard"); //ä
 
-//const applicationID = "4fcdd240";
-// const applicationKey = "86fbda45bf039fe0a2dd29fdedc2f8d8";
-
-const applicationKey = "b85adca58547211f75cf9c3a47cc424d";
-const applicationID = "7bfe09bb";
-
-// const applicationKey= "6c641ba9d7108ec30c554da9cc973757";
-// const applicationID = "1b5c3465";
-
-
-// Skapa en funktion likt generateBoard() från Guess Who som syns från början.
-// När man sedan söker/filtrerar så genereras en annan innerHTML med sökresultatet
+// API
+const applicationKey = "af17760b7ade859799ec3cddac9678ce";
+const applicationID = "4fcdd240";
 const applicationUrl = "https://api.edamam.com/search";
-let queryText = "popular"; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
-let excludeText = " "; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
-//const healthType = ["vegan", "alcohol-free"];
+
+let queryText = "popular";
+let queryString = `${applicationUrl}?app_id=${applicationID}&app_key=${applicationKey}&q=${queryText}&excluded=${excludeText}&from=0&to=${numberOfRecepies}`;
+let excludeText = " ";
 const numberOfRecepies = 12;
-
-const queryString = `${applicationUrl}?app_id=${applicationID}&app_key=${applicationKey}&q=${queryText}&excluded=${excludeText}&from=0&to=${numberOfRecepies}`;
-
 
 
 const fixedCookingTime = ((cookingTime) => {
@@ -32,6 +24,7 @@ const fixedCookingTime = ((cookingTime) => {
   }
 })
 
+const fetchRecipe = (queryString) => {
 fetch(queryString)
   .then((response) => {
     return response.json()
@@ -74,9 +67,13 @@ fetch(queryString)
     })
 
   })
-  searchButton.addEventListener('click', () => {
+}
+   searchButton.addEventListener('click', () => {
     queryText = searchField.value;
-    excludeText =excludeThis.value
-    console.log(queryText)
-    console.log(excludeText)
-  })
+    excludeText = excludeField.value;
+    console.log(queryText);
+    console.log(excludeText);
+    queryString = `${applicationUrl}?app_id=${applicationID}&app_key=${applicationKey}&q=${queryText}&excluded=${excludeText}&from=0&to=${numberOfRecepies}`;
+    fetchRecipe(queryString);
+   })
+fetchRecipe(queryString);
