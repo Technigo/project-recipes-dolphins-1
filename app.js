@@ -6,7 +6,7 @@ const excludeField = document.getElementById('exclude')
 const cssCardGrid = document.getElementById("cssCardGrid"); //ä
 
 // API
-const applicationKey = "af17760b7ade859799ec3cddac9678ce";
+const applicationKey = "0fa94b7ae92916c07f91586ac89e5c8d";
 const applicationID = "4fcdd240";
 const applicationUrl = "https://api.edamam.com/search";
 
