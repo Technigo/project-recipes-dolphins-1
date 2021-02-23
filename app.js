@@ -47,7 +47,7 @@ const fetchRecipe = (queryString) => {
       <img src=${image}>
       </div>
       <div id="cssCardContent" class="css-card-content">
-        <h2>${label}</h2>
+        <a href="${linkToRecipe}"><h2>${label}</h2></a>
         <p>Cooking time: ${fixedCookingTime(cookingTime)}</p>
       </div>
       </diV>
