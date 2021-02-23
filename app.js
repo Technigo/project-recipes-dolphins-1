@@ -11,9 +11,10 @@ const applicationID = "4fcdd240";
 const applicationUrl = "https://api.edamam.com/search";
 
 let queryText = "popular";
-let queryString = `${applicationUrl}?app_id=${applicationID}&app_key=${applicationKey}&q=${queryText}&excluded=${excludeText}&from=0&to=${numberOfRecepies}`;
 let excludeText = " ";
 const numberOfRecepies = 12;
+let queryString = `${applicationUrl}?app_id=${applicationID}&app_key=${applicationKey}&q=${queryText}&excluded=${excludeText}&from=0&to=${numberOfRecepies}`;
+
 
 
 const fixedCookingTime = ((cookingTime) => {
