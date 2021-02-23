@@ -31,7 +31,6 @@ const fetchRecipe = (queryString) => {
       return response.json()
     })
     .then((json) => {
-      console.log(json)
       json.hits.forEach((hits) => {
         const image = hits.recipe.image;
         const label = hits.recipe.label;
@@ -40,19 +39,17 @@ const fetchRecipe = (queryString) => {
         const linkToRecipe = hits.recipe.url;
         const ingredients = hits.recipe.ingredientLines;
 
-
         cssCardGrid.innerHTML += `
       <div id="cssCard" class="css-card">
       <div id="cssCardImg" class="css-card-image">
       <img src=${image}>
       </div>
       <div id="cssCardContent" class="css-card-content">
-        <h2>${label}</h2>
+        <a href="${linkToRecipe}"><h2>${label}</h2></a>
         <p>Cooking time: ${fixedCookingTime(cookingTime)}</p>
       </div>
       </diV>
       `
-
       })
 
     })

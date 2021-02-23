@@ -58,12 +58,20 @@ body {
 
 .hamburger div {
   width: 30px;
+  height: 5px;
   background-color: #000;
   border-radius: 5px;
 }
 
 .text-box {
   width: 150px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #0c0505;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
 }
 
 .search-field {
@@ -132,6 +140,11 @@ body {
   text-align: center;
 }
 
+.css-card-content a {
+  color: black;
+  text-decoration: none;
+}
+
 
 
 /* Tablet */
@@ -153,7 +166,7 @@ body {
   .logo {
     color: #BF0000;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 30px;
     margin-left: 25px;
   }
 
