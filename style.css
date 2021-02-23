@@ -74,6 +74,14 @@ body {
   justify-content: center;
 }
 
+.css-card-content h2 {
+  text-align: center;
+}
+
+.css-card-content p {
+  text-align: center;
+}
+
 /* Tablet  */
 @media (min-width: 1023px) {
   .css-card-grid {
