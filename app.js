@@ -47,6 +47,8 @@ const fetchRecipe = (queryString) => {
       <div id="cssCardContent" class="css-card-content">
         <a href="${linkToRecipe}"><h2>${label}</h2></a>
         <p>Cooking time: ${fixedCookingTime(cookingTime)}</p>
+        <p>Source: <a href="${linkToRecipe}">${source}</a></p>
+        
       </div>
       </diV>
       `
