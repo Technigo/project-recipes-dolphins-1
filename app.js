@@ -70,15 +70,7 @@ fetch(queryString)
           <p>Type: Beef/Chicken/Vego</p>
         </div>
       </div>
-      </diV
-
-
-
-
-
-
-
-
+      </diV>
       `
 
     })
