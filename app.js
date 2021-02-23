@@ -1,4 +1,5 @@
 const main = document.getElementById('main');
+const cssCardGrid = document.getElementById("cssCardGrid");
 
 //const applicationID = "4fcdd240";
 // const applicationKey = "86fbda45bf039fe0a2dd29fdedc2f8d8";
@@ -54,7 +55,7 @@ fetch(queryString)
       }
 
 
-      main.innerHTML += `
+      cssCardGrid.innerHTML += `
       
       <div id="cssCard" class="css-card">
       <div id="cssCardImg" class="css-card-image">
@@ -69,7 +70,7 @@ fetch(queryString)
           <p>Type: Beef/Chicken/Vego</p>
         </div>
       </div>
-    </div>
+      </diV
 
 
 

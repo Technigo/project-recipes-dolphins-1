@@ -68,8 +68,17 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.css-card-image {}
+/* Tablet  */
+@media (min-width: 667px) {
+  .css-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
 
-.css-card-content {}
+/* Desktop */
+@media (min-width: 1024px) {}
