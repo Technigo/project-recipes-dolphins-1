@@ -65,12 +65,16 @@ body {
 
 .css-card {
   border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .css-card-image {
-  border: 2px solid black;
+  border: 2px solid red;
 }
 
 .css-card-content {
-  border: 2px solid black;
+  border: 2px solid blue;
 }
