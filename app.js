@@ -67,9 +67,6 @@ fetch(queryString)
         <h2>${label}</h2>
         <p>Cooking time: ${fixedCookingTime(cookingTime)}</p>
         </div>
-        <div id="cssCardContentType" class="css-card-content-type">
-          <p>Type: Beef/Chicken/Vego</p>
-        </div>
       </div>
       </div>
 
@@ -85,6 +82,6 @@ fetch(queryString)
     })
 
   })
-  searchButton.addEventListener('click', () => {
+searchButton.addEventListener('click', () => {
 
-  })
+})
