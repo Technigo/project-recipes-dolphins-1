@@ -107,14 +107,18 @@ body {
     width: 50%;
   }
 
-  .icon {
-    margin-left: 5px;
+  .header {
+    padding: 10px;
+    justify-content: space-between;
   }
+
+  .icon 
   
   .logo {
     color: #BF0000;
     font-weight: 700;
-    margin-left: 10px;
+    font-size: 18px;
+    margin-left: 25px;
   }
 
   .hamburger {
@@ -126,7 +130,9 @@ body {
   }
 
   .nav {
-    margin-left: 170px;
+    font-weight: 15px;
+    margin-right: 20px;
+    font-size: 18px;
   }
 
   nav a {
