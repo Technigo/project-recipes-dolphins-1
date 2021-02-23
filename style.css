@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -131,19 +132,12 @@ body {
   text-align: center;
 }
 
-<<<<<<< HEAD
-/* Tablet  */
+
+
+/* Tablet */
 @media (min-width: 1023px) {
-  .css-card-grid {
-=======
-/* Tablet  *
-<<<<<<< HEAD/
-@media (min-
+  .css-card {
 
-
-width: 667px) {
- =======      </diV>>>>>>> 722561e3afd4c4d96eb5fb9fbf6193bd2606207f .css-card {
->>>>>>> javascript3
     flex-direction: row;
     flex-wrap: wrap;
   }
