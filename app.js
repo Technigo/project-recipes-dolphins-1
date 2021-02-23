@@ -41,16 +41,6 @@ const fetchRecipe = (queryString) => {
         const ingredients = hits.recipe.ingredientLines;
 
 
-        {
-          /* <h1>${label}</h1><br>
-                <img src=${image}>
-                <p>Cooking time:${fixedCookingTime(cookingTime)}</p>
-                <p>Source:${source}</p>
-                <p>Link to recipe: ${linkToRecipe}</p>
-                <p>Ingredients: ${ingredients}</p> */
-        }
-
-
         cssCardGrid.innerHTML += `
       <div id="cssCard" class="css-card">
       <div id="cssCardImg" class="css-card-image">
@@ -73,6 +63,7 @@ searchButton.addEventListener('click', () => {
   console.log(queryText);
   console.log(excludeText);
   queryString = `${applicationUrl}?app_id=${applicationID}&app_key=${applicationKey}&q=${queryText}&excluded=${excludeText}&from=0&to=${numberOfRecepies}`;
+  cssCardGrid.innerHTML = ""
   fetchRecipe(queryString);
 })
 fetchRecipe(queryString);
