@@ -107,8 +107,6 @@ body {
   background-color: #bc3315;
 }
 
-
-
 .css-card-grid {
   display: flex;
   flex-direction: column;
@@ -130,7 +128,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
 }
 
 .css-card-content h2 {
@@ -159,10 +156,6 @@ body {
 
   .css-card {
     width: 50%;
-  }
-
-  .css-card-content {
-    width: 60%;
   }
 
   .header {
@@ -236,9 +229,5 @@ body {
 
   .css-card {
     width: 33%;
-  }
-
-  .css-card-content {
-    width: 60%;
   }
 }
