@@ -29,7 +29,6 @@ const fixedCookingTime = ((cookingTime) => {
 fetch(queryString)
   .then((response) => {
     return response.json()
-    console.log(response)
   })
   .then((json) => {
     console.log(json)
