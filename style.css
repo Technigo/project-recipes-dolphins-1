@@ -52,13 +52,21 @@ body {
 }
 
 .css-card {
-  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.css-card-image {
-  border: 2px solid black;
+/* Tablet  */
+@media (min-width: 667px) {
+  .css-card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+  }
 }
 
-.css-card-content {
-  border: 2px solid black;
-}
+/* Desktop */
+@media (min-width: 1024px) {}
