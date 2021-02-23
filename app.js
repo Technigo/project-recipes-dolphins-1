@@ -71,14 +71,6 @@ fetch(queryString)
         </div>
       </div>
       </diV
-
-
-
-
-
-
-
-
       `
 
     })
