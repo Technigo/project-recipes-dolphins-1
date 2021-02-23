@@ -27,16 +27,12 @@ body {
   flex-direction: row;
   align-items: center;
   width: auto;
-  border: 2px solid black;
-}
-
-.logo-container img {
-  padding-right: 5px;
 }
 
 .logo {
   color: #BF0000;
   font-weight: 700;
+  margin-left: 5px;
 }
 
 .hamburger {
