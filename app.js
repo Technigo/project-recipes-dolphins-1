@@ -63,10 +63,8 @@ fetch(queryString)
       <img src=${image}>
       </div>
       <div id="cssCardContent" class="css-card-content">
-        <div id="cssCardContentTitle" class="css-card-content-title">
         <h2>${label}</h2>
         <p>Cooking time: ${fixedCookingTime(cookingTime)}</p>
-        </div>
       </div>
       </diV>
       `
