@@ -59,11 +59,22 @@ body {
   width: 150px;
 }
 
-.search-button-container {
+.search-field {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.text-box {
+  margin-top: 10px;
+}
+
+.search-button {
+  margin-top: 10px;
+}
+
+
 
 .css-card-grid {
   display: flex;
@@ -112,8 +123,11 @@ body {
     justify-content: space-between;
   }
 
+<<<<<<< HEAD
   .icon 
   
+=======
+>>>>>>> 69680ffc5ca8af7619f96cefa93f1726bf5a4886
   .logo {
     color: #BF0000;
     font-weight: 700;
@@ -123,7 +137,7 @@ body {
 
   .hamburger {
     display: none;
-  } 
+  }
 
   .nav-hidden {
     display: inline;
@@ -146,13 +160,28 @@ body {
     color: #000;
     text-decoration: none;
   }
-  
+
   a:hover {
     color: darkgray;
   }
-  
+
   a:active {
     color: gray;
+  }
+
+  .search-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-button {
+    margin-left: 5px;
+  }
+
+  .exclude-this {
+    margin-left: 10px;
   }
 }
 
