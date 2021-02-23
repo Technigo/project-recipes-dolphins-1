@@ -136,8 +136,7 @@ body {
 
 /* Tablet */
 @media (min-width: 1023px) {
-  .css-card {
-
+  .css-card-grid {
     flex-direction: row;
     flex-wrap: wrap;
   }
