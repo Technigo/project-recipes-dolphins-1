@@ -65,6 +65,13 @@ body {
 
 .text-box {
   width: 150px;
+  font-size: 16px;
+  border-width: 1px;
+  border-color: #0c0505;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  border-radius: 0px;
 }
 
 .search-field {
