@@ -31,7 +31,6 @@ const fetchRecipe = (queryString) => {
       return response.json()
     })
     .then((json) => {
-      console.log(json)
       json.hits.forEach((hits) => {
         const image = hits.recipe.image;
         const label = hits.recipe.label;
