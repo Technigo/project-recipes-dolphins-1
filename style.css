@@ -121,7 +121,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 80%;
   padding-top: 25px;
 }
 
@@ -130,6 +130,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 80%;
 }
 
 .css-card-content h2 {
@@ -157,6 +158,10 @@ body {
   }
 
   .css-card {
+    width: 50%;
+  }
+
+  .css-card-content {
     width: 50%;
   }
 
@@ -230,6 +235,10 @@ body {
   }
 
   .css-card {
+    width: 33%;
+  }
+
+  .css-card-content {
     width: 33%;
   }
 }
