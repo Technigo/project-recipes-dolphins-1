@@ -15,8 +15,8 @@ const applicationID = "7bfe09bb";
 // Skapa en funktion likt generateBoard() från Guess Who som syns från början.
 // När man sedan söker/filtrerar så genereras en annan innerHTML med sökresultatet
 const applicationUrl = "https://api.edamam.com/search";
-const queryText = "popular"; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
-const excludeText = " "; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
+let queryText = "popular"; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
+let excludeText = " "; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
 //const healthType = ["vegan", "alcohol-free"];
 const numberOfRecepies = 12;
 
@@ -72,19 +72,14 @@ fetch(queryString)
         </div>
       </div>
       </div>
-
-
-
-
-
-
-
-
       `
 
     })
 
   })
   searchButton.addEventListener('click', () => {
-
+    queryText = searchField.value;
+    excludeText =excludeThis.value
+    console.log(queryText)
+    console.log(excludeText)
   })
