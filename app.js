@@ -1,4 +1,5 @@
 const main = document.getElementById('main');
+const searchButton = document.getElementById('searchButton')
 const cssCardGrid = document.getElementById("cssCardGrid");
 
 //const applicationID = "4fcdd240";
@@ -14,19 +15,20 @@ const applicationID = "7bfe09bb";
 // Skapa en funktion likt generateBoard() från Guess Who som syns från början.
 // När man sedan söker/filtrerar så genereras en annan innerHTML med sökresultatet
 const applicationUrl = "https://api.edamam.com/search";
-const queryText = "chicken"; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
-const excludeText = "parsley"; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
+let queryText = "popular"; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
+let excludeText = " "; //Denna ska vara tom. Behöver en funktion som hämtar in värdet från sök/filter/knapp .
 //const healthType = ["vegan", "alcohol-free"];
-const numberOfRecepies = 10;
-//&health=${healthType[1]}
+const numberOfRecepies = 12;
 
 const queryString = `${applicationUrl}?app_id=${applicationID}&app_key=${applicationKey}&q=${queryText}&excluded=${excludeText}&from=0&to=${numberOfRecepies}`;
+
+
 
 const fixedCookingTime = ((cookingTime) => {
   if (cookingTime === 0) {
     return 'Not specified'
   } else {
-    return cookingTime
+    return `${cookingTime} minutes`
   }
 })
 
@@ -56,7 +58,6 @@ fetch(queryString)
 
 
       cssCardGrid.innerHTML += `
-      
       <div id="cssCard" class="css-card">
       <div id="cssCardImg" class="css-card-image">
       <img src=${image}>
@@ -66,9 +67,6 @@ fetch(queryString)
         <h2>${label}</h2>
         <p>Cooking time: ${fixedCookingTime(cookingTime)}</p>
         </div>
-        <div id="cssCardContentType" class="css-card-content-type">
-          <p>Type: Beef/Chicken/Vego</p>
-        </div>
       </div>
       </diV>
       `
@@ -76,3 +74,9 @@ fetch(queryString)
     })
 
   })
+searchButton.addEventListener('click', () => {
+  queryText = searchField.value;
+  excludeText = excludeThis.value
+  console.log(queryText)
+  console.log(excludeText)
+})
