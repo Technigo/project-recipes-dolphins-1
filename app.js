@@ -40,7 +40,6 @@ const fetchRecipe = (queryString) => {
         const linkToRecipe = hits.recipe.url;
         const ingredients = hits.recipe.ingredientLines;
 
-
         cssCardGrid.innerHTML += `
       <div id="cssCard" class="css-card">
       <div id="cssCardImg" class="css-card-image">
@@ -52,7 +51,6 @@ const fetchRecipe = (queryString) => {
       </div>
       </diV>
       `
-
       })
 
     })
